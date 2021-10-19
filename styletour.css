@@ -1,0 +1,440 @@
+body{
+	margin:0;
+	padding:0;
+	font-family:sans-serif;
+	cursor:default;
+}
+
+/* Banner above the navigation bar */
+
+.top-banner{
+	width: 100%;
+    height: 70px;
+}
+
+/* Logo inside the banner */
+
+.header-logo{
+	display:flex;
+	float:left;
+	height: 70px;
+	width:30%;
+	justify-content: flex-end;
+}
+.header-logo i{
+	margin-top: 25px;
+    padding-right: 15px;
+    font-size: 20px;
+	color: cornflowerblue;
+}
+.header-logo h2{
+	font-size: 25px;
+}
+.header-logo sup{
+	font-size: 15px;
+}
+
+/* Time and Mobile number inside the banner */
+
+.contacts-list{
+	display:flex;
+	width:70%;
+	height: 70px;
+	justify-content: center;
+}
+.contacts-list ol{
+	display:flex;
+	padding-top: 10px;
+}
+.contacts-list li{
+	display:flex;
+	list-style:none;
+	padding-right: 25px;
+    padding-left: 25px;
+}
+.contacts-list i{
+	color: cornflowerblue;
+}
+.contacts-list li p{
+	margin-top:0;
+	padding-left: 15px;
+}
+
+/* Button inside top banner */
+
+.contacts-list button{
+	cursor: pointer;
+	height: 40px;
+    width: 140px;
+	color:cornflowerblue;
+    border-color: cornflowerblue;
+    background-color: white;
+	margin-top: 15px;
+	border-radius: 25px;
+	transition: 0.3s;
+}
+.contacts-list button:hover{
+	color:white;
+	background-color:cornflowerblue;
+	border-style:none;
+	font-size:14px;
+}
+
+/* Navigation bar started */
+
+.nav-main{
+	width:100%;
+	height:70px;
+	background-color:#191b3e;
+}
+
+/* Navigation bar links */
+
+.nav-links{
+	display:flex;
+	width:60%;
+	height:70px;
+	justify-content: center;
+	float:left;
+}
+.nav-links ol{
+	display:flex;
+	list-style:none;
+	margin-top: 24px;
+}
+.nav-links li a{
+	text-decoration:none;
+	color:white;
+	font-size: 20px;
+	margin-right: 25px;
+    margin-left: 25px;
+}
+.nav-links li a:hover{
+	color:cornflowerblue;
+	transition: 0.3s;
+}
+
+/* Social media links inside the navigation bar */
+
+.social-links{
+	height:70px;
+	width:40%;
+	float:right;
+	display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.social-links i{
+	color:white;
+}
+.social-links i:hover{
+	color:#d2d1d1;
+}
+
+/* Background image in the main context */
+
+.bg-image{
+	background-image: url('ImagesT/image6.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	width:100%;
+	height:525px;
+	background-size:100% 100%;
+}
+
+/* Text over the background image */
+
+.main-text{
+	color:white;
+	width:100%;
+	display: inline-block;
+	text-align:center;
+	position: relative;
+    top: 25%;
+}
+.main-text h1{
+	font-family: -webkit-pictograph;
+	font-size:60px;
+}
+span{
+	color:#0b0d2b;
+}
+.main-text p{
+	font-size:25px;
+}
+.main-text button{
+	cursor: pointer;
+	color:white;
+	border-color:white;
+	width: 160px;
+    height: 60px;
+    font-size: 15px;
+	background-color:rgba(25,27,62,0.3);
+}
+.main-text button:hover{
+	font-size:18px;
+	border-color:rgba(25,27,62,0.8);
+	font-family: system-ui;
+	background-color:rgba(25,27,62,0.8);
+	border-radius:2px;
+	transition:0.3s;
+}
+
+/* Three images under background image */
+
+.three-images{
+	width: 100%;
+    text-align: center;
+    margin-top: 40px;
+	display: flex;
+    justify-content: space-evenly;
+}
+
+/* Dropdown over three images */
+
+.dropdown{
+	height:150px;
+	width: 260px;
+	position:relative;
+	display:inline-block;
+}
+.drop-cont{
+	position:absolute;
+	display:none;
+	z-index:1;
+}
+.dropdown:hover .drop-cont{
+	display:block;
+	top:-250px;
+	left:-60px;
+}
+.dropdown:hover .drop-cont img{
+	height:225px;
+	width: 400px;
+}
+.dropdown img{
+	height:150px;
+	width: 260px;
+}
+.pic-text{
+	padding:10px;
+	text-align:center;
+	color:white;
+	background-color:black;
+	font-family:sans-serif;
+}
+
+/* About section and two images */
+
+.bg-about{
+	background-image: url('ImagesT/image4.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 550px;
+	width:100%;
+	margin-top: 40px;
+}
+
+/* About note section */
+
+.about-note{
+	height: 550px;
+    width: 35%;
+    position: relative;
+    left: 5%;
+	display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+	color:white;
+	background-color:rgba(0,0,0,0.3);
+	float: left;
+}
+.about-note h1{
+	font-size: 50px;
+    font-family: -webkit-pictograph;
+}
+.about-note p{
+	font-family: cursive;
+	font-size: 18px;
+    line-height: 3;
+}
+.main-images{
+	height: 550px;
+    width: 60%;
+	display: inline-block;
+	margin-left: 5%;
+	text-align: -webkit-center;
+}
+.images{
+	height: 200px;
+    width: 425px;
+	margin-top: 50px;
+    margin-bottom: 50px;
+	box-shadow: 0 0 20px black;
+}
+.images img{
+	height: 200px;
+    width: 425px;
+}
+
+/* Footer */
+
+footer{
+	height:60px;
+	width:100%;
+	display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+footer p{
+	font-size: 15px;
+    font-family: sans-serif;
+}
+
+	/* Responsive site */
+
+/* Mobie devices responsive  */
+
+@media (min-width:768px) and (max-width:916px){
+
+/* Logo inside the banner */
+
+.header-logo i{
+    padding-right: 10px;
+    font-size: 18px;
+	color: cornflowerblue;
+}
+.header-logo h2{
+	font-size: 23px;
+	margin-right:-7px;
+}
+.header-logo sup{
+	font-size: 13px;
+}
+
+/* Time and Mobile number inside the banner */
+
+.contacts-list li p{
+	font-size:14px;
+}
+.contacts-list li{
+	padding-right: 10px;
+    padding-left: 10px;
+}
+
+/* Button inside top banner */
+
+.contacts-list button{
+	margin-right:20px;
+    width: 130px;
+	margin-top: 14px;
+}
+
+/* Navigation bar links */
+
+.nav-links li a{
+	font-size: 18px;
+	margin-right: 17px;
+    margin-left: 17px;
+}
+
+/* Social media links inside the navigation bar */
+
+.social-links i{
+	font-size: 15px;
+}
+
+/* Background image in the main context */
+
+.bg-image{
+	height:400px;
+}
+
+/* Text over the background image */
+
+.main-text{
+    top: 20%;
+}
+.main-text h1{
+	font-size:50px;
+}
+.main-text p{
+	font-size:20px;
+}
+.main-text button{
+	width: 155px;
+    height: 55px;
+    font-size: 15px;
+}
+
+/* Three images under background image */
+
+.three-images{
+    margin-top: 20px;
+}
+
+/* Dropdown over three images */
+
+.dropdown img{
+	height:130px;
+	width: 200px;
+}
+.dropdown:hover .drop-cont img{
+	height:160px;
+	width: 280px;
+}
+.dropdown:hover .drop-cont{
+	display:block;
+	top:-250px;
+	left:-22px;
+	top:-200px;
+}
+
+.pic-text{
+	padding:8px;
+}
+
+/* About section and two images */
+
+.bg-about{
+	height: 370px;
+	margin-top: 5px;
+}
+
+/* About note section */
+
+.about-note{
+	height: 370px;
+    width: 35%;
+}
+.about-note h1{
+	font-size: 40px;
+}
+.about-note p{
+	font-size: 14px;
+    line-height: 2;
+}
+.main-images{
+	height: 370px;
+}
+.images{
+	height: 140px;
+    width: 300px;
+	margin-top: 30px;
+    margin-bottom: 30px;
+}
+.images img{
+	height: 140px;
+    width: 300px;
+}
+
+/* Footer */
+
+footer{
+	height:50px;
+}
+footer p{
+	font-size: 13px;
+}
+}
